@@ -34,9 +34,9 @@ public class Postagem {
 	@UpdateTimestamp
 	private LocalDateTime data;
 
-    @ManyToOne
+    @ManyToOne// classe postagem muitos: classe tema um
 	@JsonIgnoreProperties("postagem")
-	private Tema tema;
+	private Tema tema;// adicionando o objeto tema (id, descrição)
 
     public Long getId() {
         return this.id;
